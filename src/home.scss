@@ -1,0 +1,31 @@
+@import "_common";
+.homebg{
+    overflow: hidden;
+    img{
+        width:100%;
+    }
+}
+.link{
+    position: fixed;
+    display: flex;
+    height: 0.49rem;
+    border-top: 1px solid #1e9ef8;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    a{
+        font-size:0.1rem;
+        flex: 1;
+        text-align: center;
+        line-height: 0.49rem;
+    }
+    .login{
+        color: #1e9ef8;
+        // flex: 1;
+    }
+    .reg{
+        color: #fff;
+        // flex: 1;
+        background: #1e9ef8;
+    }
+}
