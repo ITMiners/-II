@@ -102,7 +102,8 @@ button {
 /* 重置表单button按钮效果 */
 
 body {
-    background: #fff
+    background: #fff;
+    letter-spacing:1px;
 }
 
 
@@ -117,7 +118,7 @@ textarea,
 button {
     font-size: 12px;
     line-height: 1;
-    font-family: "微软雅黑", "黑体", "宋体";
+    // font-family: "微软雅黑", "黑体", "宋体";
     color: #666
 }
 
@@ -231,6 +232,7 @@ body {
     -webkit-display: flex;
     justify-content: space-between;
     flex-direction: column;
+    height: 100%;
 }
 
 header {
@@ -243,6 +245,6 @@ section {
 }
 
 footer {
-    border-top: 1px solid #ededee;
+    // border-top: 1px solid #ededee;
     height: .49rem;
 }

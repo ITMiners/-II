@@ -1,0 +1,22 @@
+@import "_common";
+
+
+
+
+
+footer {
+    width: 100%;
+    display: -webkit-flex;
+    background: white;
+    a {
+        -webkit-flex: 1;
+        color: #939393;
+        text-align: center;
+        padding-top: 6px;
+        span {
+            font-size: 10px;
+            display: block;
+            margin-top: 3px;
+        }
+    }
+}

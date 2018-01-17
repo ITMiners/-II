@@ -177,36 +177,16 @@ section {
 footer {
   height: .49rem; }
 
-body {
-  height: 100%; }
-
-.bg {
-  background: url(../images/bg.png);
-  flex: 1;
-  height: 100%; }
-  .bg .kong {
-    height: 2rem; }
-
-.homebg img {
-  width: 100%; }
-
-.link {
-  position: fixed;
-  display: flex;
-  height: 0.49rem;
-  border-top: 1px solid #1e9ef8;
+footer {
   width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  background: #fff; }
-  .link a {
-    font-size: 0.1rem;
-    flex: 1;
+  display: -webkit-flex;
+  background: white; }
+  footer a {
+    -webkit-flex: 1;
+    color: #939393;
     text-align: center;
-    line-height: 0.49rem; }
-  .link .login {
-    color: #1e9ef8; }
-  .link .reg {
-    color: #fff;
-    background: #1e9ef8; }
+    padding-top: 6px; }
+    footer a span {
+      font-size: 10px;
+      display: block;
+      margin-top: 3px; }
