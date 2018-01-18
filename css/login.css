@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/*  
+  Document   : CSS样式初始化  
+  Created on : 2016. 8. 7,09:41:00  
+  Author :  
+  Description:  
+  CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性  
+      导入方式：<link href="css/common.css" rel="stylesheet" type="text/css" /> */
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0; }
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,
+img {
+  border: 0 none; }
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none; }
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote,
+q {
+  quotes: none; }
+
+/* 重置嵌套引用的引号类型 */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* 重置嵌套引用*/
+input,
+select,
+textarea,
+button {
+  vertical-align: middle; }
+
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer; }
+
+/* 重置表单button按钮效果 */
+body {
+  background: #fff; }
+
+/* 重置body 页面背景为白色 */
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "微软雅黑", "黑体", "宋体";
+  color: #666; }
+
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* 重置链接a标签 */
+a:active,
+a:hover {
+  text-decoration: none; }
+
+/* 重置链接a标签的鼠标滑动效果 */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+/* 重置样式标签的样式 */
+caption {
+  display: none; }
+
+/* 重置表格标题为隐藏 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed; }
+
+/* 重置table属性 */
+img {
+  vertical-align: top; }
+
+/* 图片在当前行内的垂直位置 */
+/* 页面设置 */
+/* 取消a标签点击后的虚线框 */
+a {
+  outline: none; }
+
+a:active {
+  star: expression(this.onFocus=this.blur()); }
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+/*   
+::selection {color: #fff;background-color: #4C6E78;}      
+::-moz-selection {color: #fff;background-color: #4C6E78;}   
+*/
+/*清除浮动*/
+.clear {
+  clear: both; }
+
+/*清除浮动--推荐使用*/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+html {
+  font-size: 26.67vw;
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-family: Helvetica;
+  letter-spacing: 0.01rem;
+  color: #232323;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+
+header {
+  height: .49rem; }
+
+section {
+  flex: 1;
+  overflow-y: scroll; }
+
+footer {
+  border-top: 1px solid #ededee;
+  height: .49rem; }
+
+body {
+  background: url(../images/login_bg.jpg) no-repeat;
+  background-size: cover; }
+
+header {
+  height: .4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .31rem .33rem 0; }
+  header img {
+    width: .4rem;
+    height: .4rem; }
+  header a {
+    line-height: .28rem;
+    font-size: 12px;
+    color: #fafafa;
+    font-family: Helvetica; }
+
+.welcome {
+  height: .8rem;
+  padding: 0 .33rem; }
+  .welcome .nologin {
+    line-height: .8rem;
+    font-size: 22px;
+    color: #fff; }
+  .welcome .login-word {
+    display: none;
+    padding: .17rem 0 0.06rem 0;
+    height: .57rem; }
+    .welcome .login-word h2 {
+      height: .285rem;
+      line-height: .285rem;
+      font-size: 22px;
+      color: #fff; }
+
+section {
+  padding: 0 .33rem;
+  overflow-y: hidden; }
+  section form .phone-div {
+    border-bottom: 1px solid #545253;
+    height: .75rem; }
+    section form .phone-div p {
+      line-height: .465rem;
+      font-size: 10px;
+      color: #fff; }
+    section form .phone-div .country {
+      display: inline-block;
+      margin-top: .015rem;
+      width: .71rem;
+      height: .16rem;
+      border-right: 1px solid #555456;
+      font-size: 14px;
+      color: #fff; }
+      section form .phone-div .country span {
+        line-height: .16rem;
+        width: .41rem;
+        text-indent: .02rem; }
+      section form .phone-div .country a .icon-xiajiantou1 {
+        font-size: .18rem;
+        font-weight: 800;
+        color: #727274; }
+    section form .phone-div input[name="tel"] {
+      border: none;
+      width: 2.3rem;
+      height: .285rem;
+      font-size: 14px;
+      color: #555456;
+      text-indent: .16rem;
+      background: rgba(0, 0, 0, 0); }
+  section form .pass-div {
+    margin-top: .175rem;
+    border-bottom: 1px solid #545253; }
+    section form .pass-div p {
+      line-height: .13rem;
+      font-size: 10px;
+      color: #fff; }
+    section form .pass-div input[name="pass"] {
+      height: .45rem;
+      line-height: .45rem;
+      border: none;
+      width: 100%;
+      font-size: 14px;
+      color: #555456;
+      background: rgba(0, 0, 0, 0); }
+  section form input[type="submit"] {
+    width: 100%;
+    height: .44rem;
+    border-radius: .06rem;
+    margin-top: .16rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    line-height: .44rem;
+    color: #fff; }
+  section form .forget {
+    display: block;
+    padding-top: .2rem;
+    font-size: 12px;
+    color: #fff; }
+
+footer {
+  padding: 0 .33rem;
+  border: none; }
+  footer .more {
+    display: block;
+    line-height: 100%;
+    font-size: 12px;
+    color: #fff; }
+
+/*# sourceMappingURL=login.css.map */

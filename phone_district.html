@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电话区号</title>
+    <link rel="stylesheet" href="css/phone_district.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-1.8.3.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <a href="javascritp:history.back();"><i class="iconfont icon-zuojiantou"></i>返回</a>
+            <h2>选择国家和地区代码</h2>
+        </div>
+        <div class="header_search">
+            <input type="search" placeholder="搜索">
+        </div>
+    </header>
+    <section>
+        <ul class="hot">
+            <li>热门国家和地区</li>
+            <li><span class="li_l">中国</span><span class="li_r"></span>+86</li>
+        </ul>
+        <ul id="A" name="A">
+            <li>A</li>
+            <li><span class="li_l">阿尔巴尼亚</span><span class="li_r"></span>+355</li>
+        </ul>
+        <ul id="B">
+            <li>B</li>
+            <li><span class="li_l">巴巴多斯岛</span><span class="li_r"></span>+1246</li>
+        </ul>
+        <ul id="C">
+            <li>C</li>
+            <li><span class="li_l">朝鲜</span><span class="li_r"></span>+850</li>
+        </ul>
+        <ul id="D">
+            <li>D</li>
+            <li><span class="li_l">丹麦</span><span class="li_r"></span>+45</li>
+        </ul>
+        <ul id="E">
+            <li>E</li>
+            <li><span class="li_l">厄瓜多尔</span><span class="li_r"></span>+593</li>
+        </ul>
+        <ul id="F">
+            <li>F</li>
+            <li><span class="li_l">法国</span><span class="li_r"></span>+33</li>
+        </ul>
+        <ul id="G">
+            <li>G</li>
+            <li><span class="li_l">冈比亚</span><span class="li_r"></span>+220</li>
+        </ul>
+        <ul id="H">
+            <li>H</li>
+            <li><span class="li_l">海地</span><span class="li_r"></span>+509</li>
+        </ul>
+        <ul id="J">
+            <li>J</li>
+            <li><span class="li_l">加拿大</span><span class="li_r"></span>+1</li>
+        </ul>
+        <ul id="K">
+            <li>K</li>
+            <li><span class="li_l">开曼群岛</span><span class="li_r"></span>+1345</li>
+        </ul>
+        <ul id="L">
+            <li>L</li>
+            <li><span class="li_l">莱索托</span><span class="li_r"></span>+266</li>
+        </ul>
+        <ul id="M">
+            <li>M</li>
+            <li><span class="li_l">马达加斯加</span><span class="li_r"></span>+261</li>
+        </ul>
+        <ul id="N">
+            <li>N</li>
+            <li><span class="li_l">纳米比亚</span><span class="li_r"></span>+264</li>
+        </ul>
+        <ul id="P">
+            <li>P</li>
+            <li><span class="li_l">葡萄牙</span><span class="li_r"></span>+351</li>
+        </ul>
+        <ul id="Q">
+            <li>Q</li>
+            <li><span class="li_l">乔治亚</span><span class="li_r"></span>+995</li>
+        </ul>
+        <ul id="R">
+            <li>R</li>
+            <li><span class="li_l">日本</span><span class="li_r"></span>+81</li>
+        </ul>
+        <ul id="S">
+            <li>S</li>
+            <li><span class="li_l">萨尔瓦多</span><span class="li_r"></span>+503</li>
+        </ul>
+        <ul id="T">
+            <li>T</li>
+            <li><span class="li_l">泰国</span><span class="li_r"></span>+66</li>
+        </ul>
+        <ul id="W">
+            <li>W</li>
+            <li><span class="li_l">瓦努阿图</span><span class="li_r"></span>+678</li>
+        </ul>
+        <ul id="X">
+            <li>X</li>
+            <li><span class="li_l">西班牙</span><span class="li_r"></span>+34</li>
+        </ul>
+        <ul id="Y">
+            <li>Y</li>
+            <li><span class="li_l">牙买加</span><span class="li_r"></span>+1876</li>
+        </ul>
+        <ul id="Z">
+            <li>Z</li>
+            <li><span class="li_l">赞比亚</span><span class="li_r"></span>+260</li>
+        </ul>
+    </section>
+    <div class="a-z">
+        #
+        <a href="#A">A</a>
+        <a href="#B">B</a>
+        <a href="#C">C</a>
+        <a href="#D">D</a>
+        <a href="#E">E</a>
+        <a href="#F">F</a>
+        <a href="#G">G</a>
+        <a href="#H">H</a>
+        <a href="#J">J</a>
+        <a href="#K">K</a>
+        <a href="#L">L</a>
+        <a href="#M">M</a>
+        <a href="#N">N</a>
+        <a href="#P">P</a>
+        <a href="#Q">Q</a>
+        <a href="#R">R</a>
+        <a href="#S">S</a>
+        <a href="#T">T</a>
+        <a href="#W">W</a>
+        <a href="#X">X</a>
+        <a href="#Y">Y</a>
+        <a href="#Z">Z</a>
+    </div>
+    <div id="showLetter">
+
+    </div>
+    <script>
+        $(function() {
+            $('.a-z').children().click(function() {
+                var iTimer = null;
+                var s = $(this).html();
+                $('#showLetter').css('display', 'block');
+                $('#showLetter').html(s);
+                iTimer = setTimeout(function() {
+                    $('#showLetter').css('display', 'none');
+                }, 1000)
+            });
+        });
+    </script>
+</body>
+
+</html>

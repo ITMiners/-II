@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/*  
+  Document   : CSS样式初始化  
+  Created on : 2016. 8. 7,09:41:00  
+  Author :  
+  Description:  
+  CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性  
+      导入方式：<link href="css/common.css" rel="stylesheet" type="text/css" /> */
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0; }
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,
+img {
+  border: 0 none; }
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none; }
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote,
+q {
+  quotes: none; }
+
+/* 重置嵌套引用的引号类型 */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* 重置嵌套引用*/
+input,
+select,
+textarea,
+button {
+  vertical-align: middle; }
+
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer; }
+
+/* 重置表单button按钮效果 */
+body {
+  background: #fff; }
+
+/* 重置body 页面背景为白色 */
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "微软雅黑", "黑体", "宋体";
+  color: #666; }
+
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* 重置链接a标签 */
+a:active,
+a:hover {
+  text-decoration: none; }
+
+/* 重置链接a标签的鼠标滑动效果 */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+/* 重置样式标签的样式 */
+caption {
+  display: none; }
+
+/* 重置表格标题为隐藏 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed; }
+
+/* 重置table属性 */
+img {
+  vertical-align: top; }
+
+/* 图片在当前行内的垂直位置 */
+/* 页面设置 */
+/* 取消a标签点击后的虚线框 */
+a {
+  outline: none; }
+
+a:active {
+  star: expression(this.onFocus=this.blur()); }
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+/*   
+::selection {color: #fff;background-color: #4C6E78;}      
+::-moz-selection {color: #fff;background-color: #4C6E78;}   
+*/
+/*清除浮动*/
+.clear {
+  clear: both; }
+
+/*清除浮动--推荐使用*/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+html {
+  font-size: 26.67vw;
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-family: Helvetica;
+  letter-spacing: 0.01rem;
+  color: #232323;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+
+header {
+  height: .49rem; }
+
+section {
+  flex: 1;
+  overflow-y: scroll; }
+
+footer {
+  border-top: 1px solid #ededee;
+  height: .49rem; }
+
+header {
+  height: .95rem; }
+  header .header_top {
+    display: flex;
+    justify-content: space-between;
+    height: .42rem;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ededee; }
+    header .header_top a {
+      width: .75rem;
+      line-height: .42rem;
+      color: #3296fa;
+      font-weight: 800; }
+      header .header_top a .icon-zuojiantou {
+        font-size: 24px;
+        font-weight: 800;
+        vertical-align: middle; }
+    header .header_top h2 {
+      flex: 1;
+      width: 3rem;
+      font-size: 16px;
+      font-weight: 800;
+      color: #191f25;
+      text-align: center;
+      line-height: .42rem; }
+  header .header_search {
+    height: .35rem;
+    padding: .09rem 0;
+    text-align: center; }
+    header .header_search input[type="search"] {
+      height: 100%;
+      width: 3.43rem;
+      border: none;
+      background: #ededee url(../images/search_ico.png) no-repeat 2px 1px;
+      background-size: .275rem .36rem;
+      border-radius: .05rem;
+      text-indent: .32rem; }
+
+section {
+  flex: 1;
+  overflow-y: scroll; }
+  section ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .47rem;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 .21rem 0 .11rem; }
+    section ul li span {
+      font-size: 16px;
+      color: #191f25; }
+  section ul li:first-child {
+    background: #ededee;
+    height: .28rem;
+    font-size: 14px;
+    font-weight: 800;
+    color: #9d9fa2;
+    text-indent: .08rem;
+    line-height: .28rem; }
+
+.a-z {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  color: #7d8790;
+  width: .15rem;
+  font-size: .08rem; }
+  .a-z a {
+    display: block;
+    height: .13rem;
+    width: .15rem;
+    font-size: .08rem;
+    color: #7d8790; }
+
+#showLetter {
+  display: none;
+  height: .5rem;
+  width: .5rem;
+  border-radius: .05rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3296fa;
+  font-size: 20px;
+  color: #fff;
+  line-height: .5rem;
+  text-align: center;
+  font-weight: 800; }
+
+/*# sourceMappingURL=phone_district.css.map */
